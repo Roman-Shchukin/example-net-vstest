@@ -30,5 +30,8 @@ steps:
 
 - task: VSTest@3
   inputs:
+    testAssemblyVer2:: |
+     **\*MsTests.dll
+     !**\obj\**
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
